@@ -7,8 +7,20 @@ import java.util.Scanner;
 
 class starter {
 	public static void main(String args[]) {
-		// the string "I love to learn coding remotely." will appear in
-		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		int steve = 5;
+		int fred = 5;
+		boolean monte = steve == fred;
+		if (true){
+			System.out.println("The Values are equal ");
+		
+		}		
+		if (false){
+			System.out.println("The Values are not equal ");
+		
+		}	
+
+
+		
+
 	}
 }
