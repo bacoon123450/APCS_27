@@ -10,11 +10,11 @@ class starter {
 		int steve = 5;
 		int fred = 5;
 		boolean monte = steve == fred;
-		if (true){
+		if (monte){
 			System.out.println("The Values are equal ");
 		
 		}		
-		if (false){
+		if (!monte){
 			System.out.println("The Values are not equal ");
 		
 		}	
