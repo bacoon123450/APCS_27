@@ -13,7 +13,78 @@ class starter {
 	static ArrayList<String> arr = new ArrayList<String>();
 
 	public static void main(String args[]) throws InterruptedException {
-		// Write your code here!
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to Type Clash!");
+		String time = getTime();
+		System.out.println("it is currently "+ time +"PM and we're ready to play!");
+		System.out.println("Given a sentence, type it as fast as possible!");
+		System.out.println(" ");
+		System.out.println("------------------------------------------");
+		while (true) {
+			System.out.println("Would you like to:");
+			System.out.println("1 - Play random");
+			System.out.println("2 - Play set");
+			System.out.println("3 - Surrender");
+			System.out.println("");
+			int choice = sc.nextInt();
+			if (choice == 1){
+				String john = getSentence();
+				System.out.println("-----------------Your sentence is...-----------------");
+				System.out.println(john);
+				System.out.println("-----------------------------------------------------");
+				System.out.println("Starting countdown...");
+				countdown();
+				startTimer();
+				String snoopy = sc.nextLine();
+				String typed = sc.nextLine();
+				double timess = endTimer();
+				System.out.println("Nice job!");
+				System.out.println("You got");
+				System.out.println("You did it in " +timess+ " seconds");
+				int fred = (compareSentences(john, typed));
+				int steve = (lettersInSentence(john));
+				int dihwood = (wordsInSentence(john));
+				System.out.println("Errors " + fred +" / "+steve);
+				System.out.println("Letters per minute is " +( steve /(timess/60)));
+				System.out.println("Words per minute is " +( dihwood/(timess/60)));
+
+			}
+			else if (choice == 2){
+				System.out.println("Which one?");
+				populateArrayList();
+				int nums = sc.nextInt();
+				String suzie = getSentence(nums);
+				System.out.println("-----------------Your sentence is...-----------------");
+				System.out.println(suzie);
+				System.out.println("-----------------------------------------------------");
+				System.out.println("Starting countdown...");
+				countdown();
+				startTimer();
+				String snoopy = sc.nextLine();
+				String typed = sc.nextLine();
+				double timess = endTimer();
+				System.out.println("Nice job!");
+				System.out.println("You got");
+				System.out.println("You did it in " +timess+ " seconds");
+				int fred = (compareSentences(suzie,typed));
+				int steve = (lettersInSentence(suzie));
+				int dihwood = (wordsInSentence(suzie));
+				System.out.println("Errors " + fred +" / "+steve);
+				System.out.println("Letters per minute is " +( steve /(timess/60)));
+				System.out.println("Words per minute is " +( dihwood/(timess/60)));
+			}
+			else {
+				System.out.println("Oh well goodbye");
+				break;
+			}
+
+			
+
+
+		}
+		
+
+
 
 		
 	}
