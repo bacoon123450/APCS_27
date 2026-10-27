@@ -35,11 +35,11 @@ public class BankAccount {
 		 level = "unknown";
 		 BankAccount = 0;
 	}
-	public BankAccount(String f,boolean b, boolean c,boolean d,){
+	public BankAccount(String f,boolean b, boolean c,boolean d){
 		 name = f;
 		 rich = b;
-		 info = c;
 		 dept = d;
+		 info = c;
 		 balance = 0;
 		 level = "unknown";
 		 BankAccount = 0;
@@ -56,5 +56,28 @@ public class BankAccount {
 
 
 	// -------METHODS-------
+	public void Printinfo(){					// Prints all values of the Employee	
+		System.out.println("------------------------------");
+		System.out.println("Name" + name);
+		if (rich == true){
+			System.out.println("Thats a lot of cash");
+		}
+		if (info == true){
+			System.out.println("Do you have an account with us: yes");
+		}
+		else{
+			System.out.println("Do you have an account with us: no");
+
+		}
+		System.out.println("Do you have dept: " + dept);
+		System.out.println("Current balance" + balance);
+		System.out.println("You have a level card of:" + level);
+		if (level.equals("Ultimate black label awesome card")){
+			System.out.println("Welll come back estiemed ultimate owner");
+		}
+		System.out.println("Social secutriy number" + BankAccount);
+		System.out.println("------------------------------");
+		System.out.println("");
+	}
 
 }
