@@ -72,19 +72,8 @@ public class BankAccount {
 	}
 	public void Printinfo(){					// Prints all values of the Employee	
 		System.out.println("------------------------------");
-		System.out.println("Name" + name);
-		if (rich == true){
-			System.out.println("Thats a lot of cash");
-		}
-		if (info == true){
-			System.out.println("Do you have an account with us: yes");
-		}
-		System.out.println("You have a level card of:" + level);
-		if (level.equals("Ultimate black label awesome card")){
-			System.out.println("Welll come back estiemed ultimate owner");
-		}
+		System.out.println("Name" + Owner);
 		System.out.println("Your deposit is : $" + deposit);
-		
 		System.out.println("Current balance :" + balance+deposit);
 		System.out.println("Social secutriy number" + BankAccount);
 		System.out.println("------------------------------");
