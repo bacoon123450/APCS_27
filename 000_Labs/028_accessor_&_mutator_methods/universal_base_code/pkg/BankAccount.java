@@ -31,6 +31,7 @@ public class BankAccount {
 	// -------METHODS-------
 	public double deposit(double a){
 		balance = balance + a;
+		return balance;
 	}
 	public void displayAccountInfo(){
 		System.out.println("Owner Name: "+owner);
@@ -40,13 +41,17 @@ public class BankAccount {
 	public String getOwner(){
 		return owner;
 	}
-	public String setOwner(String a){
+	public void setOwner(String a){
 		owner = a;
+		
 	}
-	public double GetBalance(){
+	public void checkBalance(){
+		System.out.println("Balance : " + balance);
+	}
+	public double getBalance(){
 		return balance;
 	}
-	public String closeAccount(){
+	public void closeAccount(){
 		owner = " ";
 		balance = 0.0;
 		Active = false;
@@ -60,6 +65,10 @@ public class BankAccount {
 			return false;
 		}
 	}
+	public void withdraw(double a){
+		balance = balance - a;
+	}
+
 
 
 

@@ -47,8 +47,8 @@ public class Movie {
     public double getMovieRating(){
         return rating;
     }
-    public boolean compareRatings(String a){
-        boolean fred = (a.getMovieRating)<rate;
+    public boolean compareRatings(Movie a){
+        boolean fred = (a.getMovieRating()) < rating;
         return fred;
     }
     public String revenueToString(){
@@ -61,12 +61,10 @@ public class Movie {
         String finalnum = x+","+y+","+z;
         return finalnum;
     }
-    public String pirateMovie(){
-        System.out.println("Movie totally not pirated: " + movieName);
-        System.out.println("Current Rating: " + rating);
-        System.out.println("Amount of reviews: " + numRatings);
-        System.out.println("Total Revenue: " + revenue);
-        System.out.println("");
+    public Movie pirateMovie(){
+
+     
+        return this;
 
     }
 
